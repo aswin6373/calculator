@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="container">
+        <input id="user-input" readonly>
+        <div id="key-container">
+            <button class="yellow-btn clear" onclick="clearDisplay()">C</button>
+            <button class="yellow-btn clear" onclick="deleteDisplay()">DEL</button>
+            <button id="modulus" class="yellow-btn" onclick="getOperator('%')">%</button>
+            <button id="divide" class="yellow-btn" onclick="getOperator('/')">/</button>
+            <button onclick="userInput(7)">7</button>
+            <button onclick="userInput(8)">8</button>
+            <button onclick="userInput(9)">9</button>
+            <button id="multiply" class="yellow-btn" onclick="getOperator('*')">*</button>
+            <button onclick="userInput(4)">4</button>
+            <button onclick="userInput(5)">5</button>
+            <button onclick="userInput(6)">6</button>
+            <button id="subtract" class="yellow-btn" onclick="getOperator('-')">-</button>
+            <button onclick="userInput(1)">1</button>
+            <button onclick="userInput(2)">2</button>
+            <button onclick="userInput(3)">3</button>
+            <button id="add" class="yellow-btn" onclick="getOperator('+')">+</button>
+            <button id="square-root" class="yellow-btn" onclick="calculateSquareRoot()">√</button>
+            <button onclick="userInput(0)">0</button>
+            <button onclick="userInput('.')">.</button>
+            <button id="equals" class="yellow-btn" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
